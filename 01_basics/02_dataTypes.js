@@ -8,7 +8,7 @@ console.log("Mohammad Aqib");
 
 let name = "Mohammad Aqib";
 let age = 31;
-let isLogggedIn = false;
+let isLoggedIn = false;
 let State;
 let state = null;
 
@@ -27,4 +27,4 @@ console.log(typeof age); // number
 console.log(typeof null); // object
 console.log(typeof undefined); // undefine
 
-// www.tc39.es/ecma262/#sec-intro
+// www.tc39.es/ecma262
