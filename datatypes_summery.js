@@ -18,3 +18,14 @@ const BigNumber = 565425445425454545n;
 // Reference (Non Primitive )
 
 // Array, Objects, Functions;
+
+const hero = [alibaba, aliexpress, darazpk];
+
+let myObj = {
+  name: "Ali",
+  age: 22,
+};
+
+const myFunc = function () {
+  console.log("Hello World");
+};
