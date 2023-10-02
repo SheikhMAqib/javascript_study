@@ -59,6 +59,40 @@ const users = [
 
 // console.log(Object.keys(nonSingletonObject));
 // console.log(Object.values(nonSingletonObject));
-console.log(Object.entries(nonSingletonObject));
+// console.log(Object.entries(nonSingletonObject));
 
-console.log(nonSingletonObject.hasOwnProperty("isLoggedIn"));
+// console.log(nonSingletonObject.hasOwnProperty("isLoggedIn"));
+
+// ---------------------*******de structure*******-----------------------------
+
+const course = {
+  courseName: "JavaScript",
+  price: "Rs 999",
+  courseInstructor: "Mohammad Aqib",
+};
+
+// course.courseInstructor;
+
+const { courseInstructor } = course;
+const { courseInstructor: ustad } = course;
+
+console.log(courseInstructor);
+console.log(ustad);
+
+// ---------------------*******JSON*******-----------------------------
+// {
+//     "name" : "Mohammad Aqib",
+//     "email": "<EMAIL>",
+//     "courseName" : "javaScript",
+//     "price" : "free"
+// },
+
+// [
+//     {},
+//     {},
+//     {}
+// ];
+
+// https://randomuser.me/
+// https://jsonformatter.org/
+// https://randomuser.me/api/
