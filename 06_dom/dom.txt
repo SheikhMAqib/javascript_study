@@ -41,3 +41,45 @@ title.style.boderRadius ="5px"
 '5px'
 title.style.boderRadius ="25px"
 '25px'
+
+title.textContent
+'\n        DOM Learning by SheikhMAqib test text\n      '
+title.innerText
+'DOM Learning by SheikhMAqib'
+title.innerHTML
+'\n        DOM Learning by SheikhMAqib<span style="display: none"> test text</span>\n      '
+
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('h2')
+<h2>​…​</h2>​
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('input[type="password"]')
+<input type=​"password" name=​" " id>​
+
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+const myuL = document.querySelector('ul')
+undefined
+myuL.querySelector('li')
+<li>​…​</li>​
+const turnGreen = myuL.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = 'green '
+'green '
+turnGreen.style.padding = '15px'
+'15px'
+
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const tempList = document.querySelectorAll('li')
+undefined
+tempList
+NodeList(3) [li, li, li]
+tempList[0].style.color ='green'
+'green'
