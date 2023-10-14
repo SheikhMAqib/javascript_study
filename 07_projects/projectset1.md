@@ -6,7 +6,7 @@
 
 # Solution code
 
-# project 1
+# Project 1 Solution
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -57,4 +57,18 @@ form.addEventListener("submit", function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
+
+## Project 3 Solution
+
+```javascript
+const clock = document.getElementById("clock");
+
+// const clock = document.querySelector('#clock');
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 ```
