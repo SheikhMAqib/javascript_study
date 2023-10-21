@@ -77,22 +77,68 @@
 
     // NEW
 
+    // -------------******BUBBLE*****---------------
     document.getElementById("images").addEventListener(
       "click",
       function (e) {
-        console.log("clicked the in side the UI ");
+        // console.log("clicked the in side the UI ");
       },
       false
     );
-
-    // -----------**********------------
 
     document.getElementById("owl").addEventListener(
       "click",
       function (e) {
-        console.log("You clicked on the Owl");
+        // console.log("You clicked on the Owl");
+        // e.stopPropagation();
       },
       false
     );
+
+    // ---------------****capturing*****----------
+
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        // console.log("with true clicked the in side the UI ");
+      },
+      true
+    );
+
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
+        // console.log("with true You clicked on the Owl");
+      },
+      true
+    );
+
+    // ----------------*****google******--------------------
+
+    document.getElementById("google").addEventListener(
+      "click",
+      function (en) {
+        // en.preventDefault();
+        // en.stopPropagation();
+        // console.log("Google LINK prevented default ");
+      },
+      false
+    );
+
+    document.querySelector("#images").addEventListener("click", function (en) {
+      // // console.log(en.target.parentNode);
+      // let removeIt = en.target.parentNode;
+      // // removeIt.remove();
+      // removeIt.parentNode.removeChild(removeIt);
+    });
+
+    document.querySelector("#images").addEventListener("click", function (em) {
+      console.log(em.target.tagName);
+      if (em.target.tagName === "IMG") {
+        console.log(em.target.id);
+        let removeIt = em.target.parentNode;
+        removeIt.parentNode.removeChild(removeIt);
+      }
+    });
   </script>
 </html>
